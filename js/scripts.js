@@ -1,14 +1,14 @@
 var noVowels = function(enteredPhrase) {
-  var phraseArray = enteredPhrase.split("");
-  for (var index = 0; index < phraseArray.length; index +=1) {
-    if (phraseArray[index] === "a" || phraseArray[index] === "e" || phraseArray[index] === "i" || phraseArray[index] === "o" || phraseArray[index] === "u") {
-      phraseArray[index] = "-"
-    }
-    var answer = phraseArray.join("");
+  var vowels = ["a", "e", "i", "o", "i"];
+  var phraseArray = enteredPhrase.split(""); // changes input from string to array
+    for (var index = 0; index < phraseArray.length; index +=1) {
+      if (vowels.includes(phraseArray[index])) {
+        phraseArray[index] = "-"
+      }
+    var answer = phraseArray.join(""); // turns the array into a string
   };
   return answer;
 };
-
 
 
 $(document).ready(function(){
