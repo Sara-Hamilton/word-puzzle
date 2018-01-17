@@ -5,9 +5,25 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Word Puzzle</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Word Puzzles</h1>
+      <div>
+        <form id="puzzle">
+          <div class="form-group">
+            <label for="phrase">Enter a sentence</label>
+            <input id="phrase" class="form-control" type="text">
+          </div>
 
+          <button type="submit" class="btn btn-primary">Remove the vowels</button>
+        </form>
+      </div>
+      <div id="result">
+        <p>Your phrase without vowels:<span class="vowelLess"></span>
+        </p>
+      </div>
+    </div>
   </body>
 </html>
